@@ -15,7 +15,7 @@
         return 0;
     }
 
-    int calc(int c, int d){
+    int calc(int c, int d){ 
         int e;
         e = floor(10*c+d)/(10*_a + _b);
         return e;
