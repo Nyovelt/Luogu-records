@@ -45,10 +45,12 @@ int main()
     }
 
     int ans = 0;
+    
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < i; j++)
+        int flag =0;
+        for (int j = 0; (j < i)&&(flag ==0); j++)
         {
             for (int k = 0; k < j; k++)
             {
@@ -56,7 +58,9 @@ int main()
                 if (num[j] + num[k] == num[i])
                 {
                     ans++;
-                   
+                    flag =1;
+
+
                 }
                 else
                 {
