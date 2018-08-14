@@ -2,19 +2,20 @@
 #include <iostream>
 #include <algorithm>
 
-int n;
+int n; //数字
 
 int main()
 {
-    scanf("%d", &n);
-    long int num[n];
+    scanf("%d", &n);//有多少数
+
+    long int num[n];//定义数组
     for (int i = 0; i < n; i++)
     {
         long int temp = 0;
         scanf("%ld", &temp);
 
         int flag = 0;
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < i; j++)//去重操作
         {
             if (num[j] == temp)
             {
@@ -36,9 +37,9 @@ int main()
         }
     }
 
-    std::sort(num, num + n);
+    std::sort(num, num + n);//排序
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)//模拟
     {
         //printf("number%d:%d\n", i, num[i]);
     }
@@ -55,11 +56,11 @@ int main()
                 if (num[j] + num[k] == num[i])
                 {
                     ans++;
-                    //printf("%d+%d=%d\n",num[j],k,i);
+                   
                 }
                 else
                 {
-                    //printf("%d+%d!=%d\n",j,k,i);
+                    
                 }
             }
         }
@@ -72,5 +73,5 @@ int main()
     getchar();
     getchar();
     getchar();
-    getchar();
+
 }
