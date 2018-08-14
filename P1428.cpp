@@ -13,7 +13,7 @@ int main()
         scanf("%d", &cute);
         fish[i] = cute;
         //printf("fish:%d,cute:%d\n", i, cute);
-        int ans=0;
+        int ans = 0;
         for (int j = 0; j < i; j++)
         {
 
