@@ -15,7 +15,7 @@ int main()
         else
         {
             n++;
-            printf("n:%d \n", n);
+            //printf("n:%d \n", n);
         }
     }
 
