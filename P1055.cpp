@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-char isbn[]
 char isbn[14];
 int sum = 0;
 int j = 1;
